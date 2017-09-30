@@ -1,0 +1,7 @@
+{
+    "globals": {
+    },
+		"rules": {
+        "eqeqeq": "off"
+    }
+}
