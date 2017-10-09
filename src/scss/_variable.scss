@@ -1,0 +1,60 @@
+/**********   基础变量 ***********/
+
+//$gray-dark: #747474 !default;
+$gray-light: #e8e8e8 !default;
+$gray-lighter: #fbfbfb !default;
+$active-red: #fd7878 !default;
+
+
+/**********   颜色 ***********/
+
+$body-bg: #fff !default;
+
+//text
+$text-strong: #000 !default;
+$text-color: #747474 !default;
+$text-em-color: $active-red !default;
+
+//border
+$border-color: $gray-light !default;
+
+//button
+$btn-default-bg: #fff !default;
+$btn-default-color: #808080 !default;
+$btn-default-border: $gray-light !default;
+
+$btn-red-bg: $active-red !default;
+$btn-red-color: #fff !default;
+$btn-red-border: $active-red !default;
+
+$btn-border-radius: 5px !default;
+
+//table
+$table-odd-bg: $gray-lighter !default;
+$table-even-bg: #fff !default;
+
+//input
+$input-placeholder-color: #bfbfbf !default;
+
+
+
+/**********   字体 ***********/
+
+$font-size-base: 14px !default;
+$font-size-large : ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small : ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$line-height-base : 1.428571429 !default; // 20/14
