@@ -1,14 +1,13 @@
-const plugins = require("./webpack.plugins");
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+var plugins = require("./webpack.plugins");
+var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
 module.exports = {
 	entry: "./src/main.js",
 	output: {
 		path: path.resolve(__dirname, "./dist/"),
-		filename: 'js/bundle.js',
-		publicPath: "/"
+		filename: 'js/bundle.js'
 	},
 	module: {
 		loaders: [
@@ -28,7 +27,8 @@ module.exports = {
 				test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
 				loader: 'file-loader',
 				query: {
-					name: 'fonts/[name].[ext]'
+					name: 'fonts/[name].[ext]',
+					publicPath: "../"
 				}
       },
 			{
@@ -37,11 +37,20 @@ module.exports = {
 				query: {
 					name: '[name].[ext]?[hash]'
 				}
-      }
+      },
+			{
+				test: /\.html$/,
+				// loader: 'html-loader'
+				loader: "html-loader?-minimize"
+			}
 		]
 	},
 	resolve: {
 		extensions: ['scss', '.js']
+	},
+	externals: {
+		jquery: 'window.$',
+		$: 'window.$'
 	},
 	plugins: plugins
 }

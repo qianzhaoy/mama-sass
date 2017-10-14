@@ -1,3 +1,34 @@
-.quice{
-	color: white;
+.clearfix{
+	@include clearfix;
+}
+
+em{
+	color: $active-red;
+}
+
+//网页主体宽度
+.body-content{
+	@include center-block;
+	width: 1170px;
+}
+
+.float-r{
+	float: right !important;
+}
+
+.float-l{
+	float: left !important;
+}
+
+
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center{
+	text-align: center !important;
 }

@@ -1,0 +1,38 @@
+.orders > .order-list > .item {
+	margin-bottom: 20px;
+
+	&:nth-of-type(even) {
+		background-color: $table-odd-bg;
+	}
+
+	em {
+		color: $active-red;
+		font-style: normal;
+	}
+}
+
+.orders > .order-list table,
+.orders > .order-head table {
+	@for $i from 1 through 12 {
+		col.grid-#{$i} {
+			width: 100% * ($i / 12);
+		}
+	}
+}
+
+.orders > .order-list table th{
+	text-align: left;
+	font-weight: normal;
+}
+
+.orders > .order-list table td{
+	text-align: center;
+}
+
+.orders > .order-head table {
+	th,
+	td {
+		border: 0;
+		text-align: center;
+	}
+}

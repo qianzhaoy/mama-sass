@@ -4,6 +4,7 @@
 $gray-light: #e8e8e8 !default;
 $gray-lighter: #fbfbfb !default;
 $active-red: #fd7878 !default;
+$brand-primary: darken(#428bca, 6.5%) !default; // #337ab7
 
 
 /**********   颜色 ***********/
@@ -32,9 +33,17 @@ $btn-border-radius: 5px !default;
 //table
 $table-odd-bg: $gray-lighter !default;
 $table-even-bg: #fff !default;
+$table-bg-hover: $gray-lighter !default;
 
 //input
 $input-placeholder-color: #bfbfbf !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
 
 
 

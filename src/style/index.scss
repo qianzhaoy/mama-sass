@@ -1,0 +1,41 @@
+@import "../scss/mama";
+body > div{
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 24px;
+	padding: 10px 0;
+	border-bottom: 1px solid $border-color;
+	margin: 10px 0;
+}
+
+.icon{
+	font-size: 40px;
+}
+
+.icon_wrap > li{
+	display: inline;
+	border-radius: 5px;	
+	&:hover{
+		color: #fff;
+		background-color: dodgerblue;
+	}
+}
+
+.grid > .row [class ^= "col"]{
+	border: 1px solid #fff;
+	background-color: #4183c4;
+	padding: 20px 0;
+	color: #ffffff;
+	text-align: center;
+}
+
+.grid > .row{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.order-list table th span{
+	margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+@at-root {
+	.row {
+		width: 100%;
+		@include clearfix;
+	}
+
+	@for $i from 1 through 12 {
+		.col-#{$i} {
+			float: left;
+			min-height: 1px;
+			width: 100% * ($i / 12);
+		}
+	}
+
+
+	@for $i from 1 through 12 {
+		.move-#{$i} {
+			margin-left: 100% * ($i / 12);
+		}
+	}
+
+	@for $i from 1 through 12 {
+		.push-#{$i} {
+			margin-right: 100% * ($i / 12);
+		}
+	}
+
+}

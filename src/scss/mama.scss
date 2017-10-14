@@ -1,7 +1,22 @@
-@import "./mixin";
-@import "./variable";
+@import "mixin";
+@import "variable";
+
+//初始化样式
+@import "normalize";
 
 //基础样式
-@import "./normalize";
-@import "./mamaIcon";
-@import "./core";
+@import "mamaIcon";
+@import "core";
+@import "color";
+
+//全局样式
+@import "scaffolding";
+
+//柵格
+@import "col";
+
+//表格
+@import "tables";
+
+//订单
+@import "orders";
