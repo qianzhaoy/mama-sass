@@ -37,6 +37,7 @@
 
 .orders > .order-list table th {
 	border: 0;
+	border-bottom: 1px solid $border-color;
 	text-align: left;
 	font-weight: normal;
 }

@@ -1,4 +1,4 @@
-[{
+var data = [{
 	"id": "2017101200001035",
 	"seller_shop_id": 173,
 	"seller_shop_name": "游游儿童乐园111",
@@ -73,7 +73,7 @@
 		"order_id": "2017101200001025",
 		"item_id": 3647,
 		"sku_id": "",
-		"pic_url": "http:\/\/xlmama3.img-cn-shanghai.aliyuncs.com\/20170810\/YwrGRx6pWp.jpg",
+		"pic_url": "../static/images/photo1.jpg",
 		"item_name": "\u4e00\u5206",
 		"price": 1,
 		"market_price": 111,
@@ -151,7 +151,7 @@
 		"order_id": "2017100900001279",
 		"item_id": 3629,
 		"sku_id": "3083",
-		"pic_url": "http:\/\/xlmama3.img-cn-shanghai.aliyuncs.com\/20170810\/YwrGRx6pWp.jpg",
+		"pic_url": "../static/images/photo1.jpg",
 		"item_name": "\u6700\u65b0\u5546\u54c1\u6700\u65b0\u5546\u54c1",
 		"price": 1111,
 		"market_price": 22220000,
@@ -170,3 +170,5 @@
 	"electronicCoupon": null,
 	"promise": null
 }]
+
+module.exports = data
