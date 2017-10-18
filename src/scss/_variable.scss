@@ -21,14 +21,18 @@ $border-color: $gray-light !default;
 
 //button
 $btn-default-bg: #fff !default;
-$btn-default-color: #808080 !default;
+$btn-default-color: $text-color !default;
 $btn-default-border: $gray-light !default;
 
 $btn-red-bg: $active-red !default;
 $btn-red-color: #fff !default;
 $btn-red-border: $active-red !default;
 
-$btn-border-radius: 5px !default;
+$btn-gray-bg: $gray-lighter !default;
+$btn-gray-color: $text-color !default;
+$btn-gray-border: $gray-lighter !default;
+
+$btn-border-radius: 3px !default;
 
 //table
 $table-odd-bg: $gray-lighter !default;

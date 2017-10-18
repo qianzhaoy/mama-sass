@@ -1,34 +1,62 @@
-.clearfix{
+.clearfix {
 	@include clearfix;
 }
 
-em{
+em {
 	color: $active-red;
 }
 
 //网页主体宽度
-.body-content{
+.body-content {
 	@include center-block;
 	width: 1170px;
 }
 
-.float-r{
+.float-r {
 	float: right !important;
 }
 
-.float-l{
+.float-l {
 	float: left !important;
 }
 
 
 .show {
-  display: block !important;
+	display: block !important;
 }
 
 .hidden {
-  display: none !important;
+	display: none !important;
 }
 
-.text-center{
+.text-center {
 	text-align: center !important;
+}
+
+.border-style {
+	@include borders;
+}
+
+.border-r {
+	@extend .border-style;
+	border-right-width: 1px !important;
+}
+
+.border-t {
+	@extend .border-style;
+	border-right-width: 1px !important;
+}
+
+.border-b {
+	@extend .border-style;
+	border-right-width: 1px !important;
+}
+
+.border-l {
+	@extend .border-style;
+	border-right-width: 1px !important;
+}
+
+.border-no {
+	border: 0 !important;
 }

@@ -1,0 +1,61 @@
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	user-select: none;
+	white-space: nowrap;
+	text-align: center;
+	border: 1px solid transparent;
+	cursor: pointer;
+	
+	>.mama-icon{
+		margin-right: 3px;
+	}
+}
+
+.btn-default {
+	@include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+
+.btn-gray {
+	@include button-variant($btn-gray-color, $btn-gray-bg, $border-color);
+}
+
+.btn-red {
+	@include button-variant($btn-red-color, $btn-red-bg, $btn-red-border);
+}
+
+.btn-sm-default {
+	@extend .btn-default;
+	@include sm-btn-size;
+}
+
+.btn-sm-red {
+	@extend .btn-red;
+	@include sm-btn-size;
+}
+
+.btn-sm-gray {
+	@extend .btn-gray;
+	@include sm-btn-size;
+}
+
+.btn-flat-default {
+	@extend .btn-default;
+	@include flat-btn-size;
+}
+
+.btn-flat-red {
+	@extend .btn-red;
+	@include flat-btn-size;
+}
+
+.btn-flat-gray {
+	@extend .btn-gray;
+	@include flat-btn-size;
+}
+
+.disabled{
+	cursor: not-allowed !important;
+	opacity: .8;
+	filter:alpha(opacity=80);
+}

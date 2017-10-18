@@ -8,7 +8,7 @@
 		.col-#{$i} {
 			float: left;
 			min-height: 1px;
-			width: 100% * ($i / 12);
+			width: 100% * ($i / 12) !important;
 		}
 	}
 

@@ -1,6 +1,6 @@
 @import "../scss/mama";
 body > div{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 h2{
@@ -38,4 +38,19 @@ h2{
 
 .order-list table th span{
 	margin-right: 10px;
+}
+
+.order-list .item_info{
+	padding-left: 10px;
+	text-align: left;
+	width: 170px;
+	float: left;
+	.item_name{
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.skus{
+		color: $text-color;
+	}
 }

@@ -1,5 +1,6 @@
 .orders > .order-list > .item {
 	margin-bottom: 20px;
+	border: 1px solid $border-color;
 
 	&:nth-of-type(even) {
 		background-color: $table-odd-bg;
@@ -13,19 +14,36 @@
 
 .orders > .order-list table,
 .orders > .order-head table {
+
+	width: 100%;
+	max-width: 100%;
+
 	@for $i from 1 through 12 {
 		col.grid-#{$i} {
 			width: 100% * ($i / 12);
 		}
 	}
+
+	tr {
+		> th,
+		> td {
+			padding: 8px;
+			line-height: $line-height-base;
+			vertical-align: middle;
+		}
+	}
+
 }
 
-.orders > .order-list table th{
+.orders > .order-list table th {
+	border: 0;
 	text-align: left;
 	font-weight: normal;
 }
 
-.orders > .order-list table td{
+.orders > .order-list table td {
+	@include borders;
+	border-width: 1px 0 0 0;
 	text-align: center;
 }
 

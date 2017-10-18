@@ -1,5 +1,5 @@
 <div class="item">
-	<table class="table">
+	<table>
 		<colgroup>
 			<col class="grid-3">
 			<col class="grid-1">
@@ -19,22 +19,45 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr data-content="buyerOrderItems">
+			{{each(i,el) buyerOrderItems}}
+			<tr>
 				<td>
 					<div class="float-l">
 						<img src="/static/images/photo1.jpg" width="80px" height="80px">
 					</div>
-					<div class="float-l">
-						<div></div>
+					<div class="item_info">
+						<div class="item_name">${el.item_name}</div>
+						{{each(i,el) el.sku_props_str.split(";")}}
+							<div class="skus">${el}</div>
+						{{/each}}
 					</div>
 				</td>
-				<td>乌拉拉</td>
-				<td>哇咔咔</td>
-				<td>哇咔咔</td>
-				<td>哇咔咔</td>
-				<td>哇咔咔</td>
-				<td>哇咔咔</td>
+				<td>${el.quantity}</td>
+				<td>${el.price / 100}</td>
+				<td class="border-r">
+					{{if i == 0}}
+						<span class="mama-red">售后</span>
+					{{/if}}
+				</td>
+				<td class="border-no">
+					{{if i == 0}}
+						<div>￥${total_fee}</div>
+						<div class="mama-red">(含运费${postage / 100}元)</div>
+					{{/if}}
+				</td>
+				<td class="border-no">
+					{{if i == 0}}
+						<div>交易关闭</div>
+						<div class="mama-red">查看详情</div>
+					{{/if}}
+				</td>
+				<td class="border-no">
+					{{if i == 0}}
+						<div class="mama-red">取消订单</div>
+					{{/if}}
+				</td>
 			</tr>
+			{{/each}}
 		</tbody>
 	</table>
 </div>
