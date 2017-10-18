@@ -12,11 +12,6 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.js$/,
-				loader: 'babel-loader?presets[]=es2015',
-				exclude: /node_modules/,
-			},
-			{
 				test: /\.scss$/,
 				loader: ExtractTextPlugin.extract({
 					fallback: 'style-loader',
@@ -30,20 +25,20 @@ module.exports = {
 					name: 'fonts/[name].[ext]',
 					publicPath: "../"
 				}
-      },
+			},
 			{
 				test: /\.(png|jpe?g|gif)(\?\S*)?$/,
 				loader: 'file-loader',
 				query: {
 					name: '[name].[ext]?[hash]'
 				}
-      },
+			},
 			{
 				test: /\.html$/,
 				// loader: 'html-loader'
 				loader: "html-loader?-minimize"
 			}
-		]
+			]
 	},
 	resolve: {
 		extensions: ['scss', '.js']

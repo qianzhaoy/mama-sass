@@ -1,4 +1,5 @@
 /**********  input *************/
+
 div.input-wrap {
 	width: 180px;
 	height: 30px;
@@ -6,12 +7,16 @@ div.input-wrap {
 	display: table;
 	border-radius: $btn-border-radius;
 	padding-left: 5px;
-	
-	&.disabled{
+
+	&.disabled {
 		cursor: not-allowed;
 		background-color: $disable-color;
+		input {
+			cursor: not-allowed;
+			background-color: $disable-color;
+		}
 	}
-	
+
 	input {
 		box-sizing: content-box;
 		margin: 0;
@@ -21,13 +26,8 @@ div.input-wrap {
 		outline: none;
 		display: table-cell;
 		height: 18px;
-		
-		&:disabled{
-			cursor: not-allowed;
-			background-color: $disable-color;
-		}
 	}
-	
+
 	.input-icon {
 		padding: 5px;
 		display: table-cell;
@@ -44,19 +44,20 @@ div.form-wrap {
 	> div {
 		display: inline-block;
 	}
-	
+
 	> label {
 		display: inline-block;
 	}
-	
-	.input-wrap{
-		margin-right: 5px;	
+
+	.input-wrap {
+		margin-right: 5px;
 	}
 }
 
 
 /**********  select *************/
-select{
+
+select {
 	border: 1px solid $border-color;
 	padding: 5px;
 	width: 100%;
@@ -64,56 +65,60 @@ select{
 }
 
 /**********  radio checkbox *************/
+
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9; // IE8-9
-  line-height: normal;
+	margin: 4px 0 0;
+	margin-top: 1px \9; // IE8-9
+	line-height: normal;
 }
+
 .radio,
 .checkbox {
-  position: relative;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
 
-  label {
-    min-height: $line-height-base; // Ensure the input doesn't jump when there is no text
-    padding-left: 20px;
-    margin-bottom: 0;
-    font-weight: normal;
-    cursor: pointer;
-  }
+	label {
+		min-height: $line-height-base; // Ensure the input doesn't jump when there is no text
+		padding-left: 20px;
+		margin-bottom: 0;
+		font-weight: normal;
+		cursor: pointer;
+	}
 }
+
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 4px \9;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 4px \9;
 }
 
 .radio + .radio,
 .checkbox + .checkbox {
-  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+	margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
 }
 
 // Radios and checkboxes on same line
 .radio-inline,
 .checkbox-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding-left: 20px;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
 }
+
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px; // space out consecutive inline controls
+	margin-top: 0;
+	margin-left: 10px; // space out consecutive inline controls
 }
 
 // Apply same disabled cursor tweak as for inputs
@@ -122,27 +127,29 @@ input[type="checkbox"] {
 // Note: Neither radios nor checkboxes can be readonly.
 input[type="radio"],
 input[type="checkbox"] {
-  &[disabled],
-  &.disabled,
-  fieldset[disabled] & {
-    cursor: not-allowed;
-  }
+	&[disabled],
+	&.disabled,
+	fieldset[disabled] & {
+		cursor: not-allowed;
+	}
 }
+
 // These classes are used directly on <label>s
 .radio-inline,
 .checkbox-inline {
-  &.disabled,
-  fieldset[disabled] & {
-    cursor: no-allowed;
-  }
+	&.disabled,
+	fieldset[disabled] & {
+		cursor: no-allowed;
+	}
 }
+
 // These classes are used on elements with <label> descendants
 .radio,
 .checkbox {
-  &.disabled,
-  fieldset[disabled] & {
-    label {
-      cursor: no-allowed;
-    }
-  }
+	&.disabled,
+	fieldset[disabled] & {
+		label {
+			cursor: no-allowed;
+		}
+	}
 }
