@@ -9,7 +9,7 @@ $brand-primary: darken(#428bca, 6.5%) !default; // #337ab7
 
 /**********   颜色 ***********/
 
-$body-bg: #fff !default;
+$body-bg: #fbfbfb !default;
 
 //text
 $text-strong: #000 !default;
@@ -35,8 +35,8 @@ $btn-gray-border: $gray-lighter !default;
 $btn-border-radius: 3px !default;
 
 //table
-$table-odd-bg: $gray-lighter !default;
-$table-even-bg: #fff !default;
+$table-odd-bg: #fff  !default;
+$table-even-bg: $gray-lighter !default;
 $table-bg-hover: $gray-lighter !default;
 
 //input

@@ -33,6 +33,11 @@ em {
 	text-align: center !important;
 }
 
+.border-full{
+	@extend .border-style;
+	border-width: 1px;
+}
+
 .border-style {
 	@include borders;
 }

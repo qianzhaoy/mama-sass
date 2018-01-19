@@ -4,24 +4,24 @@
 		@include clearfix;
 	}
 
-	@for $i from 1 through 12 {
+	@for $i from 1 through 24 {
 		.col-#{$i} {
 			float: left;
 			min-height: 1px;
-			width: 100% * ($i / 12) !important;
+			width: 100% * ($i / 24) !important;
 		}
 	}
 
 
-	@for $i from 1 through 12 {
+	@for $i from 1 through 24 {
 		.move-#{$i} {
-			margin-left: 100% * ($i / 12);
+			margin-left: 100% * ($i / 24);
 		}
 	}
 
-	@for $i from 1 through 12 {
+	@for $i from 1 through 24 {
 		.push-#{$i} {
-			margin-right: 100% * ($i / 12);
+			margin-right: 100% * ($i / 24);
 		}
 	}
 

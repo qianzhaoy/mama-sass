@@ -7,7 +7,7 @@ div.input-wrap {
 	display: table;
 	border-radius: $btn-border-radius;
 	padding-left: 5px;
-
+	background-color: #fff;
 	&.disabled {
 		cursor: not-allowed;
 		background-color: $disable-color;

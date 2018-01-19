@@ -2,8 +2,12 @@
 	margin-bottom: 20px;
 	border: 1px solid $border-color;
 
-	&:nth-of-type(even) {
+	&:nth-of-type(odd) {
 		background-color: $table-odd-bg;
+	}
+	
+		&:nth-of-type(even) {
+		background-color: $table-even-bg;
 	}
 
 	em {
